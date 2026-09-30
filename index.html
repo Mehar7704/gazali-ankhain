@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhtrma Ji — A Private World of Feelings, Care & Beautiful Memories.">
+  <title>Muhtrma Ji ♡ The Private World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader"><div class="loader-heart">♡</div><p>Preparing Your Little World...</p></div>
+  <div class="aurora aurora-one"></div><div class="aurora aurora-two"></div><div class="aurora aurora-three"></div>
+  <div id="particles"></div>
+
+  <div id="passwordScreen" class="screen">
+    <div class="login-card glass">
+      <span class="eyebrow">PRIVATE • FOR MUHTRMA JI</span>
+      <div class="big-heart">♡</div>
+      <h1>Enter The Private World</h1>
+      <p>Some little worlds are not meant for everyone.</p>
+      <div class="password-row">
+        <input id="passwordInput" type="password" placeholder="Enter secret password" autocomplete="off">
+        <button id="togglePassword" class="icon-btn" aria-label="Show password">◉</button>
+      </div>
+      <button id="unlockButton" class="primary-btn">Unlock My Little World ✦</button>
+      <p id="loginError" class="error"></p>
+      <small>Hint: try <b>muhtrma</b></small>
+    </div>
+  </div>
+
+  <main id="mainWebsite" class="locked">
+    <header class="topbar glass">
+      <button class="brand" data-go="1">Muhtrma Ji <span>♡</span></button>
+      <nav id="nav">
+        <button data-go="1">Home</button><button data-go="2">World</button><button data-go="12">Story</button><button data-go="18">Meter</button><button data-go="28">Galaxy</button><button data-go="30">Final</button>
+      </nav>
+      <div class="toolbar">
+        <button id="themeButton" class="icon-btn" title="Theme">☾</button>
+        <button id="musicButton" class="icon-btn" title="Music">♫</button>
+      </div>
+    </header>
+
+    <section class="page active" data-page="1">
+      <div class="hero glass">
+        <span class="eyebrow">PAGE 01 • WELCOME</span>
+        <h1>Welcome, <em>Muhtrma Ji</em> ♡</h1>
+        <p class="lead">A private little world made with respect, care, memories and a little bit of Pagal-pan.</p>
+        <div class="hero-actions"><button class="primary-btn next">Enter My World ✦</button></div>
+        <div class="signature">— Pagal</div>
+      </div>
+    </section>
+
+    <section class="page" data-page="2"><div class="content glass">
+      <span class="eyebrow">PAGE 02 • PRIVATE WORLD</span><h2>A world with your name on it.</h2>
+      <p>Yahan koi perfect story nahi — bas woh choti choti feelings hain jo kabhi lafzon mein nahi aa paatin.</p>
+      <div class="quote">“Somewhere between fights, smiles and memories, a beautiful bond quietly grows.”</div>
+    </div></section>
+
+    <section class="page" data-page="3"><div class="content glass">
+      <span class="eyebrow">PAGE 03 • LITTLE THINGS</span><h2>It is the little things.</h2>
+      <div class="cards"><article><b>🌸 Smile</b><p>Aik smile aur mood ka weather change.</p></article><article><b>👀 Eyes</b><p>Gazali aankhon ka alag hi chapter hai.</p></article><article><b>🤍 Care</b><p>Care jo words se zyada actions mein nazar aaye.</p></article></div>
+    </div></section>
+
+    <section class="page" data-page="4"><div class="content glass letter">
+      <span class="eyebrow">PAGE 04 • A LETTER</span><h2>A Letter For You</h2>
+      <p>Muhtrma Ji, kuch log zindagi mein shor ke saath nahi, sukoon ke saath aate hain. Aap ki presence mein woh choti si warmth hai jo ordinary moments ko memorable bana deti hai.</p>
+      <p>Pagal hone ka matlab hamesha serious hona nahi — kabhi tang karna, kabhi manana, aur kabhi bas khamoshi se care karna bhi isi kahani ka hissa hai.</p>
+      <p class="urdu">آپ کی خوشی، عزت اور سکون ہمیشہ اہم رہے گا۔</p><div class="signature">— Pagal ♡</div>
+    </div></section>
+
+    <section class="page" data-page="5"><div class="content glass">
+      <span class="eyebrow">PAGE 05 • WHY MUHTRMA?</span><h2>Why You Are Special</h2>
+      <div class="cards"><article><b>Respect</b><p>Because respect makes every bond beautiful.</p></article><article><b>Kindness</b><p>Your care can turn a difficult day softer.</p></article><article><b>Uniqueness</b><p>There is only one Muhtrma Ji.</p></article><article><b>Memories</b><p>Small moments become big memories.</p></article></div>
+    </div></section>
+
+    <section class="page" data-page="6"><div class="content glass centered">
+      <span class="eyebrow">PAGE 06 • THOSE EYES</span><div class="eye-art">◉ ◉</div><h2>Those Gazali Eyes 👀</h2><p>“Aankhon mein haya ho aur baat mein softness — phir Pagal ka system hang hona lazmi hai.”</p>
+    </div></section>
+
+    <section class="page" data-page="7"><div class="content glass centered">
+      <span class="eyebrow">PAGE 07 • HER SMILE</span><div id="flowerBurst" class="smile-orb">😊</div><h2>Smile → Flowers 🌸</h2><p>Button dabao. Dekho, Muhtrma Ji ki smile ka imaginary weather kya karti hai.</p><button id="smileButton" class="primary-btn">Make The Flowers Bloom</button>
+    </div></section>
+
+    <section class="page" data-page="8"><div class="content glass">
+      <span class="eyebrow">PAGE 08 • CARE & RESPECT</span><h2>Love • Care • Respect</h2><div class="quote urdu">محبت خوبصورت تب بنتی ہے جب اس کے ساتھ عزت، خیال اور سکون بھی ہو۔</div><div class="cards"><article>🤍 <b>Care</b><p>Khairiyat poochna bhi ek language hai.</p></article><article>🌙 <b>Respect</b><p>Boundaries aur feelings dono ki izzat.</p></article></div>
+    </div></section>
+
+    <section class="page" data-page="9"><div class="content glass">
+      <span class="eyebrow">PAGE 09 • CUTE FIGHTS</span><h2>Our Cute Fight Department 😂</h2><div class="meter"><span style="width:82%"></span></div><p>Fight detected: <b>82%</b></p><div class="quote">“Argument ka duration unpredictable, lekin manana mission always active.”</div>
+    </div></section>
+
+    <section class="page" data-page="10"><div class="content glass centered">
+      <span class="eyebrow">PAGE 10 • CHURAIL MODE</span><div class="mode-face">😈</div><h2>Churail Mode Detected!</h2><p id="modeText">System is monitoring the situation...</p><button id="modeButton" class="primary-btn">Activate Safe Mode</button>
+    </div></section>
+
+    <section class="page" data-page="11"><div class="content glass">
+      <span class="eyebrow">PAGE 11 • MUHTRMA ANALYSIS</span><h2>Scientific Analysis 🧪</h2><div class="analysis"><div><span>Smile Test</span><b>100%</b></div><div><span>Eyes Test</span><b>System Hang</b></div><div><span>Care Test</span><b>∞</b></div><div><span>Anger Test</span><b>⚠️ Churail Detected</b></div><div><span>Beauty Test</span><b>Calculation Failed</b></div></div>
+    </div></section>
+
+    <section class="page" data-page="12"><div class="content glass">
+      <span class="eyebrow">PAGE 12 • OUR STORY</span><h2>A Little Story</h2><div class="timeline"><div><i>01</i><p><b>First moments</b><br>Small conversations became familiar.</p></div><div><i>02</i><p><b>More memories</b><br>Teasing, laughing and little arguments.</p></div><div><i>03</i><p><b>Today</b><br>A private collection of feelings and memories.</p></div></div>
+    </div></section>
+
+    <section class="page" data-page="13"><div class="content glass centered">
+      <span class="eyebrow">PAGE 13 • ROSE GARDEN</span><h2>Garden of Feelings 🌹</h2><div id="roseGarden" class="garden"><span>🌹</span><span>🌷</span><span>🌹</span><span>🌸</span><span>🌹</span></div><p>Every flower carries one simple message: <b>Khush raho.</b></p>
+    </div></section>
+
+    <section class="page" data-page="14"><div class="content glass centered">
+      <span class="eyebrow">PAGE 14 • MOOD ROOM</span><h2>What is your mood?</h2><div class="moods"><button data-mood="happy">😊 Happy</button><button data-mood="calm">🌙 Calm</button><button data-mood="angry">😤 Angry</button><button data-mood="cute">🥰 Cute</button></div><div id="moodResult" class="quote">Choose one...</div>
+    </div></section>
+
+    <section class="page" data-page="15"><div class="content glass centered">
+      <span class="eyebrow">PAGE 15 • MYSTERY GIFTS</span><h2>Choose A Mystery Gift 🎁</h2><div class="gift-grid"><button class="gift" data-gift="A reminder that you are appreciated.">🎁<small>Gift 1</small></button><button class="gift" data-gift="One virtual rose, delivered with respect. 🌹">🎁<small>Gift 2</small></button><button class="gift" data-gift="A secret message: Keep smiling. ♡">🎁<small>Gift 3</small></button></div><div id="giftResult" class="quote"></div>
+    </div></section>
+
+    <section class="page" data-page="16"><div class="content glass centered">
+      <span class="eyebrow">PAGE 16 • MISSION</span><h2>Mission: Find Muhtrma 🔎</h2><p>Search the screen. There is a tiny hidden heart.</p><div id="missionArea" class="mission-area"><button id="hiddenHeart" aria-label="hidden heart">♡</button></div><div id="missionResult" class="quote"></div>
+    </div></section>
+
+
+
+    <section class="page" data-page="17"><div class="content glass">
+      <span class="eyebrow">PAGE 17 • UNSAID</span><h2>Things I Never Say Enough</h2>
+      <p>Kabhi kabhi dil mein bohat kuch hota hai lekin words kam par jate hain. Is liye kuch baatein yahan likh di hain jo shayad roz kehna mushkil hota hai.</p>
+      <ul class="soft-list"><li>“Aap ki khairiyat mere liye genuinely matter karti hai.”</li><li>“Aap ki izzat aur comfort hamesha important hain.”</li><li>“Har baat ka jawab zaroori nahi; kabhi samajhna hi kaafi hota hai.”</li><li>“Aap ki smile ordinary cheez nahi, mood changer hai.”</li></ul>
+    </div></section>
+
+    <section class="page" data-page="18"><div class="content glass centered">
+      <span class="eyebrow">PAGE 18 • MUHTRMA METER</span><h2>Official Muhtrma Meter 💗</h2>
+      <p>Ye meter bilkul scientific nahi hai... lekin Pagal Research Department ne approve kiya hai. 😄</p>
+      <div class="love-meter"><div id="loveMeterFill"></div></div><div id="loveMeterValue" class="meter-number">0%</div>
+      <button id="loveMeterButton" class="primary-btn">Run The Analysis</button>
+      <div id="complimentBox" class="quote">Awaiting analysis...</div>
+    </div></section>
+
+    <section class="page" data-page="19"><div class="content glass centered">
+      <span class="eyebrow">PAGE 19 • MEMORY CARDS</span><h2>Little Things Worth Remembering ✨</h2>
+      <p>Beautiful memories hamesha grand moments se nahi banti. Kabhi ek sentence, ek smile, ya ek funny fight bhi kaafi hoti hai.</p>
+      <div class="memory-grid">
+        <button class="memory-card"><span>🌸</span><b>A Smile</b><small>One small smile can change the whole mood and make an ordinary moment feel special.</small></button>
+        <button class="memory-card"><span>☕</span><b>A Conversation</b><small>Some conversations end, but their little sentences stay in memory for a long time.</small></button>
+        <button class="memory-card"><span>🌙</span><b>A Quiet Moment</b><small>Not every beautiful thing needs many words. Sometimes peaceful silence says enough.</small></button>
+        <button class="memory-card"><span>😂</span><b>A Cute Fight</b><small>Because every story needs a little teasing, a little drama and a lot of patience.</small></button>
+      </div>
+    </div></section>
+
+    <section class="page" data-page="20"><div class="content glass">
+      <span class="eyebrow">PAGE 20 • SECRET SURPRISE</span><h2>One Last Secret 🔐</h2>
+      <p>Teen dafa dil se click karo. Har click ek chota sa step hai aur third click par hidden message unlock hoga.</p>
+      <div class="centered"><button id="secretHeart" class="secret-heart">♡</button><div id="secretMessage" class="quote">The secret is waiting...</div></div>
+    </div></section>
+
+    <section class="page" data-page="21"><div class="content glass">
+      <span class="eyebrow">PAGE 21 • PAGAL'S NOTEBOOK</span><h2>Pagal's Little Notebook 📖</h2>
+      <p>Is notebook mein koi perfect sentences nahi. Bas woh thoughts hain jo randomly mind mein aa jate hain:</p>
+      <div class="notebook">
+        <p>“Aaj Muhtrma khush hon to mission successful.”</p>
+        <p>“Agar gussa hain to pehle sunna hai, phir bolna.”</p>
+        <p>“Agar smile kar rahi hain to flowers ready rakho.”</p>
+        <p>“Agar teasing start ho gayi to Pagal ko sambhalna mushkil hai.” 😂</p>
+      </div>
+    </div></section>
+
+    <section class="page" data-page="22"><div class="content glass centered">
+      <span class="eyebrow">PAGE 22 • A BEAUTIFUL DUA</span><h2>A Beautiful Dua 🤲</h2>
+      <p class="urdu dua">اللہ آپ کو ہمیشہ خوش رکھے، سکون دے، عزت دے، آپ کی ہر جائز خواہش پوری کرے، اور آپ کی زندگی کو آسانیوں، برکت اور خوبصورت مسکراہٹوں سے بھر دے۔ آمین۔</p>
+      <p>Some feelings are best expressed as a prayer because a sincere dua asks for happiness without asking anything in return.</p>
+    </div></section>
+
+    <section class="page" data-page="23"><div class="content glass">
+      <span class="eyebrow">PAGE 23 • RESPECT</span><h2>Respect Comes First 🤍</h2>
+      <p>Beautiful bonds sirf feelings se nahi bante. Un mein respect, boundaries, understanding aur doosray ke comfort ka khayal bhi hota hai.</p>
+      <div class="cards"><article><b>Listen</b><p>Har baat ka solution dena zaroori nahi. Kabhi simply sun lena bhi care hoti hai.</p></article><article><b>Understand</b><p>Har mood ko judge karne ke bajaye samajhne ki koshish karna.</p></article><article><b>Respect</b><p>Words, choices, privacy aur personal space ki izzat.</p></article><article><b>Care</b><p>Choti choti cheezon mein khairiyat aur comfort ko yaad rakhna.</p></article></div>
+    </div></section>
+
+    <section class="page" data-page="24"><div class="content glass">
+      <span class="eyebrow">PAGE 24 • IF YOU ARE HAVING A BAD DAY</span><h2>A Message For A Difficult Day 🌧️</h2>
+      <p>Agar kabhi din acha na ho, mood heavy ho ya sab kuch thora overwhelming lage, to yaad rakhein: har difficult day permanent nahi hota.</p>
+      <p>Thora rest, thori silence, ek cup chai, aur kisi trusted person se baat — sometimes that is enough to make the next hour easier.</p>
+      <div class="quote">“Aaj ka din difficult ho sakta hai, lekin aap ki value kisi difficult day se kam nahi hoti.”</div>
+    </div></section>
+
+    <section class="page" data-page="25"><div class="content glass centered">
+      <span class="eyebrow">PAGE 25 • POETRY ROOM</span><h2>Two Little Lines 🌹</h2>
+      <p class="urdu poetry">تیری مسکراہٹ کا ذکر ہو تو<br>لفظ خود بخود خوبصورت ہو جاتے ہیں۔</p>
+      <div class="quote">“Some people become memories; some become a feeling you quietly carry.”</div>
+      <p>And this page? Bas thori si poetry, thora sa Pagal-pan, aur bohat sa respect.</p>
+    </div></section>
+
+    <section class="page" data-page="26"><div class="content glass">
+      <span class="eyebrow">PAGE 26 • CUTE FIGHT RULEBOOK</span><h2>Official Fight Rules 😂</h2>
+      <ol class="rules">
+        <li>Gussa allowed. Disrespect not allowed.</li>
+        <li>Teasing allowed. Dil dukhana not allowed.</li>
+        <li>Argument ho sakta hai. Ignoring forever is not a feature.</li>
+        <li>Pagal ki first responsibility: pehle samajhna.</li>
+        <li>Churail mode temporary hai. Muhtrma mode permanent favourite hai. 😄</li>
+        <li>Final rule: smile eventually return honi chahiye. 🌸</li>
+      </ol>
+    </div></section>
+
+    <section class="page" data-page="27"><div class="content glass centered">
+      <span class="eyebrow">PAGE 27 • COMPLIMENT MACHINE</span><h2>Random Compliment Generator ✨</h2>
+      <p>Button dabao aur system aaj ka random compliment generate karega.</p>
+      <button id="complimentButton" class="primary-btn">Generate A Compliment</button>
+      <div id="randomCompliment" class="quote">“Your smile deserves its own notification.”</div>
+    </div></section>
+
+    <section class="page" data-page="28"><div class="content glass">
+      <span class="eyebrow">PAGE 28 • MEMORY GALAXY</span><h2>Our Little Galaxy 🌌</h2>
+      <p>Is galaxy mein har star ek symbolic memory hai — ek conversation, ek laugh, ek argument, ek apology, ya ek simple “khayal rakhna”.</p>
+      <div id="galaxy"><span>✦</span><span>✧</span><span>★</span><span>✦</span><span>✧</span><span>★</span><span>✦</span><span>★</span><span>✧</span><span>✦</span></div>
+    </div></section>
+
+    <section class="page" data-page="29"><div class="content glass centered">
+      <span class="eyebrow">PAGE 29 • FINAL LETTER</span><h2>Before You Leave… 💌</h2>
+      <p>Thank you for every laugh, every conversation, every little memory and even those moments jab Pagal ko samajh nahi aata tha ke ab manana hai ya chup rehna hai. 😂</p>
+      <p>Whatever the moment, one thing should always remain simple: <b>care with respect.</b></p>
+      <p class="urdu">خوش رہیں، مسکراتی رہیں، اور ہمیشہ اپنی قدر جانیں۔</p>
+      <div class="signature">— Pagal</div>
+    </div></section>
+
+    <section class="page" data-page="30"><div class="final glass">
+      <span class="eyebrow">PAGE 30 • THE END</span><div class="final-heart">♡</div>
+      <h1>Muhtrma Ji</h1><h2>This little world is only for you.</h2>
+      <p>23 pages se 30 pages tak, har page ka ek hi purpose tha: ek respectful, cute aur memorable little world banana.</p>
+      <p>Made with respect, care, feelings and a little Pagal-pan.</p>
+      <div class="signature">— Pagal ♡</div><button id="restart" class="secondary-btn">Visit Again</button>
+    </div></section>
+
+    <div id="progressBar"><span id="progressFill"></span></div><div class="pager glass"><button id="prev" class="nav-btn">← Previous</button><span id="pageIndicator">01 / 20</span><button id="next" class="nav-btn">Next →</button></div>
+  </main>
+  <div id="toast"></div><button id="topButton" class="top-button" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
